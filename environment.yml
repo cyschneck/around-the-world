@@ -9,3 +9,4 @@ dependencies:
   - pip
   - pip:
     - matplotlib # avoid warning "QApplication: invalid style override passed, ignoring it."
+    - distinctipy # visually distinct colors
