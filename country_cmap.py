@@ -9,8 +9,7 @@ import distinctipy
 
 ## Country Borders: 258 Countries (https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/)
 
-borders = "admin_0_countries"
-resolution = "10m"
+
 shpfilename = cartopy.io.shapereader.natural_earth(resolution='10m',
 												category='cultural',
 												name='admin_0_countries')
@@ -18,7 +17,6 @@ shpfilename = cartopy.io.shapereader.natural_earth(resolution='10m',
 ## Read in Shapefile
 reader = cartopy.io.shapereader.Reader(shpfilename)
 countries = reader.records()
-
 
 all_country_names = {}
 colors = distinctipy.get_colors(258)
