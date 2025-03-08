@@ -1,8 +1,6 @@
 # around-the-world
 Maps colored-coded for each country with a unique color (white/transparent backgrounds)
 
-Each country defined with a unique color
-
 ## World Maps with 258 Countries
 Unique color for each country ([color key](https://github.com/cyschneck/around-the-world/blob/main/country_cmap.json))
 
