@@ -1,5 +1,5 @@
 # around-the-world
-Uniquely color-coded maps
+Maps colored-coded for each country with a unique color (white/transparent backgrounds)
 
 Each country defined with a unique color
 
@@ -22,7 +22,7 @@ Unique color for each country ([color key](https://github.com/cyschneck/around-t
 </p>
 
 ## Development Environment    
-To run or test against `around-the-world` github repo/fork, a development environment can be created via conda/miniconda
+To run against `around-the-world` github repo/fork, a development environment can be created via conda/miniconda
 
 First, [install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
 
