@@ -1,0 +1,11 @@
+name: around-the-world
+channels:
+  - conda-forge
+dependencies:
+  - python<3.14  # maximum support 3.13
+  - cartopy
+  - numpy
+  - geopandas
+  - pip
+  - pip:
+    - matplotlib # avoid warning "QApplication: invalid style override passed, ignoring it."
