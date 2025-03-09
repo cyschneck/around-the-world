@@ -1,4 +1,4 @@
-# Generate Coutnry_CMAP.json
+# Generate country_cmap.json
 ## Unique Colors for Each Country
 
 import cartopy
