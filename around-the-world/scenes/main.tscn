@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://8itf02f8p70s"]
+
+[ext_resource type="Texture2D" uid="uid://c4g2qu7p7h5cf" path="res://sprites/world_258_countries_center_long_0_borders_transparent.png" id="1_o5qli"]
+
+[node name="main" type="Node2D"]
+
+[node name="MapSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("1_o5qli")
+centered = false
+
+[node name="MapBackground" type="ColorRect" parent="MapSprite"]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.275618, 0.238151, 0.162056, 1)
+
+[node name="BottomToolbar" type="ColorRect" parent="."]
+z_index = -1
+offset_top = 639.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.207991, 0.207991, 0.207991, 1)
