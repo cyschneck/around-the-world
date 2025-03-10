@@ -21,7 +21,11 @@ countries = reader.records()
 all_country_names = {}
 colors = distinctipy.get_colors(258)
 for i, country in enumerate(countries):
-	all_country_names[country.attributes["GEOUNIT"]] = colors[i]
+	red = colors[i][0]
+	green = colors[i][1]
+	blue = colors[i][2]
+	hexcode =  distinctipy.get_hex(colors[i])
+	all_country_names[country.attributes["GEOUNIT"]] = {"RGB": colors[i], "hexcode": hexcode}
 
 ## Save as .json
 with open("country_cmap.json", "w") as out_file:

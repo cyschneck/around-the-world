@@ -30,9 +30,9 @@ def generate_world_258_map(center_lon):
 
 		if map_type == "color":
 			for country in countries:
-				red = country_cmap_dict[country.attributes["GEOUNIT"]][0]
-				green = country_cmap_dict[country.attributes["GEOUNIT"]][1]
-				blue = country_cmap_dict[country.attributes["GEOUNIT"]][2]
+				red = country_cmap_dict[country.attributes["GEOUNIT"]]["RGB"][0]
+				green = country_cmap_dict[country.attributes["GEOUNIT"]]["RGB"][1]
+				blue = country_cmap_dict[country.attributes["GEOUNIT"]]["RGB"][2]
 				ax.add_geometries(country.geometry, cartopy.crs.PlateCarree(),
 								facecolor=(red, green, blue))
 		fig_name = f"maps/world_258_countries_center_long_{center_lon}_{map_type}"
@@ -105,7 +105,7 @@ def generate_usa_map():
 	plt.show()
 	
 if __name__=="__main__":
-	center_longitudes = list(range(0, 190, 10))
-	#for cent_lon in center_longitudes:
-	#	generate_world_258_map(cent_lon)
-	generate_usa_map()
+	center_longitudes = [0]
+	for cent_lon in center_longitudes:
+		generate_world_258_map(cent_lon)
+	#generate_usa_map()
