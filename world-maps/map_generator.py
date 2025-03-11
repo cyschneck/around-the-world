@@ -18,7 +18,7 @@ def generate_world_258_map(center_lon):
 		countries = reader.records()
 
 		# matplotlib
-		fig = plt.figure(figsize=(18, 18))
+		fig = plt.figure(figsize=(10, 10))
 		ax = plt.axes(projection=cartopy.crs.PlateCarree(central_longitude=center_lon))
 	
 		if map_type == "empty":
@@ -41,8 +41,8 @@ def generate_world_258_map(center_lon):
 			ax.spines[spine].set_color("None")
 		print(fig_name)
 		print(fig_name+"_transparent")
-		plt.savefig(fig_name+".png", dpi=500, bbox_inches="tight", pad_inches=0, transparent=False)
-		plt.savefig(fig_name+"_transparent.png", dpi=500, bbox_inches="tight", pad_inches=0, transparent=True)
+		plt.savefig(fig_name+".png", dpi=300, bbox_inches="tight", pad_inches=0, transparent=False)
+		plt.savefig(fig_name+"_transparent.png", dpi=300, bbox_inches="tight", pad_inches=0, transparent=True)
 		plt.close()
 	
 	for type_of_map in ["empty", "borders", "color"]:
